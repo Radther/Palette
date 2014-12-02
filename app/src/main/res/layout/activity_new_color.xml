@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rdevblog.palette.NewColorActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/color_preview"
+            android:src="@drawable/single_color_shape"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="36dp"
+            android:text="@string/invalid_color"
+            android:textSize="36sp"
+            android:visibility="invisible"
+            android:id="@+id/invalid_text_view"
+            android:textColor="#fff"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:paddingBottom="32dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:hint="Color Name"
+            android:gravity="bottom"
+            android:textSize="36sp"
+            android:id="@+id/color_name_edit"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:hint="Color Name"
+            android:textSize="24sp"
+            android:padding="8dp"
+            android:gravity="bottom"
+            android:id="@+id/color_hex_edit"/>
+        </LinearLayout>
+
+</LinearLayout>
